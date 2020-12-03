@@ -28,6 +28,16 @@ class MyArray{
     const item = this.data[index];
     this.shiftItems(index);
   }
+
+  shiftItems(index){
+    // this loop will shift all the items to the right
+    for( i=index; i < this.length; i++ ){
+      this.data[i] = this.data[i+1];
+    }
+    // this delete method will delete the last item to prevent duplicate items when shifting items to the right
+    delete this.data[this.length-1];
+    this.length--;
+  }
 }
 
 const newArray = new MyArray();
