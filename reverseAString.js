@@ -21,4 +21,7 @@ function reverse(string){
 // Using the JS Reverse method
 function reverse2(string){
   return string.split().reverse().join("");
-}
+};
+
+// Using es6
+const reverse3 = string => string.split().reverse().join("");
