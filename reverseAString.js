@@ -17,3 +17,8 @@ function reverse(string){
   }
   return reverse.toString();
 };
+
+// Using the JS Reverse method
+function reverse2(string){
+  return string.split().reverse().join("");
+}
